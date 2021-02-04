@@ -1,0 +1,201 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #map {
+        height: 100vh;
+    }
+
+    .title {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        font-size: 88px;
+        z-index: 30;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #333;
+        font-family:'Comic sans MS';
+    }
+
+    .search-container {
+        width: 400px;
+        height: 60px;
+        background-color: #454E53;
+        position: absolute;
+        z-index: 30;
+        top: 230px;
+        left: 100px;
+        border-radius: 30px;
+    }
+
+    .search {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: green;
+        border-radius: 30px;
+    }
+
+    .search input {
+        width: 100%;
+        font-size: 25px;
+        border: none;
+        background-color: transparent;
+        color: orange;
+    }
+
+    .search input:focus {
+        outline: none;
+    }
+
+    .search i {
+        color: white;
+        font-size: 25px;
+    }
+
+    .stores-list-container {
+        width: 400px;
+        background: rgb(244,31,31);
+        background: radial-gradient(circle, rgba(244,31,31,0.6906976744186046) 0%, rgba(244,146,0,0.8348837209302326) 57%, rgba(32,240,1,0.6697674418604651) 100%);
+        border-radius: 30px;
+        position: absolute;
+        z-index: 30;
+        top: 320px;
+        left: 100px;
+        border-radius: 30px;
+        bottom: 20px;
+    }
+
+     .stores-list .store-container{
+        border: solid;
+        border-color: grey;
+        background: rgb(254,255,254);
+        background: radial-gradient(circle, rgba(254,255,254,0.6697674418604651) 1%, rgba(214,207,207,0.4976744186046511) 100%);
+        border-radius: 30px;
+        padding: 20px;
+        margin: 10px;
+     }
+
+    .stores-list {
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    .store-container {
+        display: flex;
+        border-bottom: 1px solid #979797;
+        cursor: pointer;
+    }
+
+    .store-info-container {
+        flex-grow: 1;
+    }
+
+    .store-address {
+        font-size: 16px;
+        color: #7C0AEF;
+        margin-top: 8px;
+    }
+
+    .store-phone-number {
+        color: #D0629D;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .store-number-container {
+        align-items: center;
+        display: flex;
+    }
+
+    .store-number {
+        width: 30px;
+        height: 30px;
+        background-color: green;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .store-address span {
+        display: block;
+    }
+
+    .marker-location {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .marker-status {
+        border-bottom: 1px #D3D3D3	solid;
+        padding-bottom: 8px;
+    }
+
+    .marker-top {
+        border-radius: 20%;
+        padding-bottom: 8px;
+        margin: 5px;
+    }
+
+    .marker-bottom {
+      border-radius: 20%;
+      padding: 8px;
+      margin-top: 6px;
+    }
+
+    .marker-adress .circle, .marker-phone-number .circle {
+        width: 30px;
+        height: 30px;
+        background-color: #1985A1;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+    }
+
+    .marker-adress, .marker-phone-number {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .marker-container   {
+        padding: 10px;
+        border-radius: 10%;
+        background: rgb(244,31,31);
+        background: radial-gradient(circle, rgba(244,31,31,0.6906976744186046) 0%, rgba(244,146,0,0.8348837209302326) 57%, rgba(32,240,1,0.6697674418604651) 100%);
+    }
+
+    .store-container-background {
+        width: 100%;
+        display: flex;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border-radius: 18px;
+        transition: background all 0.2s ease-in-out;
+    }
+
+    .store-container-background:hover {
+        background-color: #ccc;
+    }
+
+    .store-name {
+        font-size: 23px;
+            color: #8904B1;
+    }
