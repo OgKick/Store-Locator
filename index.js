@@ -445,7 +445,7 @@ function createMarker(latlng, name, address, open, openClose, day, hours, phone,
           </div>
         </div>  `;
         var image = {
-        url: 'store.png'}
+        url: 'supermarket.png'}
     var marker = new google.maps.Marker({
         icon: image,
       map: map,
